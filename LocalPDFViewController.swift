@@ -48,7 +48,7 @@ extension UIWebView {
         //load local pdf
         let termsPath:String? = NSBundle.mainBundle().pathForResource(name, ofType: "pdf")!
         let url = NSURL(fileURLWithPath: termsPath!)
-        let pdfRequest = NSURLRequest(URL: url!)
+        let pdfRequest = NSURLRequest(URL: url)
         self.loadRequest(pdfRequest)
     }
     func loadExternalPDF(name:String!){
