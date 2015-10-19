@@ -37,6 +37,9 @@
                                 <state key="normal" title="External PDF">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hBh-yS-k9D" kind="presentation" id="Gnz-ya-Igl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -54,6 +57,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="59" y="241"/>
+        </scene>
+        <!--Load External View Controller-->
+        <scene sceneID="klt-et-Dfe">
+            <objects>
+                <viewController id="hBh-yS-k9D" customClass="LoadExternalViewController" customModule="MyFilesSwift9" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a2e-Fh-bsg"/>
+                        <viewControllerLayoutGuide type="bottom" id="r1x-2F-sIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oVO-gs-3FZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91m-lm-FpZ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="My External PDF" id="rl2-LI-7gf">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="4Li-0a-CDP">
+                                            <connections>
+                                                <action selector="btnBack:" destination="hBh-yS-k9D" id="BoN-CF-Mt8"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-Bo-IkA">
+                                <rect key="frame" x="0.0" y="64" width="611" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="91m-lm-FpZ" secondAttribute="trailing" id="74G-DI-Jtq"/>
+                            <constraint firstItem="91m-lm-FpZ" firstAttribute="top" secondItem="a2e-Fh-bsg" secondAttribute="bottom" id="CZc-9h-AtP"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="leading" secondItem="oVO-gs-3FZ" secondAttribute="leading" id="N2n-QT-3VP"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="bottom" secondItem="r1x-2F-sIP" secondAttribute="top" id="evX-lS-FEg"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="top" secondItem="91m-lm-FpZ" secondAttribute="bottom" id="fLx-1o-z3H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cZo-Bo-IkA" secondAttribute="trailing" constant="-27" id="fPL-qx-EOw"/>
+                            <constraint firstItem="cZo-Bo-IkA" firstAttribute="leading" secondItem="91m-lm-FpZ" secondAttribute="leading" id="vMs-7d-yjb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="cZo-Bo-IkA" id="HX1-JA-qR4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smo-HD-yrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="947"/>
         </scene>
         <!--LocalPDF View Controller-->
         <scene sceneID="KQh-V1-H6w">
