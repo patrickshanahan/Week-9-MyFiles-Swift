@@ -16,6 +16,7 @@
 		3623B3FC1AB79D8B00AE0EE8 /* LocalPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623B3FB1AB79D8B00AE0EE8 /* LocalPDFViewController.swift */; };
 		3623B3FE1AB79ED800AE0EE8 /* testers.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3623B3FD1AB79ED800AE0EE8 /* testers.pdf */; };
 		36C954131AB7C2F700439ADE /* LoadExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C954121AB7C2F700439ADE /* LoadExternalViewController.swift */; };
+		90EAEE001DB5887100C513B4 /* ExternalPDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EAEDFF1DB5887100C513B4 /* ExternalPDFViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3623B3FB1AB79D8B00AE0EE8 /* LocalPDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPDFViewController.swift; sourceTree = "<group>"; };
 		3623B3FD1AB79ED800AE0EE8 /* testers.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = testers.pdf; sourceTree = "<group>"; };
 		36C954121AB7C2F700439ADE /* LoadExternalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadExternalViewController.swift; sourceTree = "<group>"; };
+		90EAEDFF1DB5887100C513B4 /* ExternalPDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalPDFViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				3623B3FB1AB79D8B00AE0EE8 /* LocalPDFViewController.swift */,
 				36C954121AB7C2F700439ADE /* LoadExternalViewController.swift */,
+				90EAEDFF1DB5887100C513B4 /* ExternalPDFViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				3623B3DC1AB79D4400AE0EE8 /* ViewController.swift in Sources */,
 				3623B3DA1AB79D4400AE0EE8 /* AppDelegate.swift in Sources */,
+				90EAEE001DB5887100C513B4 /* ExternalPDFViewController.swift in Sources */,
 				36C954131AB7C2F700439ADE /* LoadExternalViewController.swift in Sources */,
 				3623B3FC1AB79D8B00AE0EE8 /* LocalPDFViewController.swift in Sources */,
 			);
